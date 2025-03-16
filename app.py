@@ -1,11 +1,11 @@
 import streamlit as st 
 # Get user input and convert to lowercase
-st.title("Text Analyzer")
+st.title("✨ Text Analyzer")
 user_paragraph = st.text_area("Enter a paragraph: ").lower()
 
 # Print the original paragraph
-st.write("**Your paragraph:**", user_paragraph)
-
+st.markdown("**Your paragraph:**", user_paragraph)
+st.subheader("📊 Result")
 # List of vowels
 vowels = ['a', 'e', 'i', 'o', 'u']
 
@@ -18,12 +18,12 @@ for char in user_paragraph:
         count += 1  # Increment count if a vowel is found
 
 # Print the final vowel count once
-st.write(f"🔡 Total number of vowels: **{count}**")
+st.markdown(f"🔡 Total number of vowels: **{count}**")
 # Count total words and characters
 Total_words = len(user_paragraph.split())
 Total_characters = len(user_paragraph)
-st.write(f"📝 Total words: **{Total_words}**")
-st.write(f"🔠 Total characters: **{Total_characters}**")
+st.markdown(f"📝 Total words: **{Total_words}**")
+st.markdown(f"🔠 Total characters: **{Total_characters}**")
 
 
 # Check if the word "python" is in the paragraph
