@@ -5,10 +5,7 @@ user_paragraph = st.text_area("Enter a paragraph: ").lower()
 
 # Print the original paragraph
 st.write("**Your paragraph:**", user_paragraph)
-"""vowels = "aeiouAEIOU"
 
-# Count vowels
-vowel_count = sum(1 for char in user_paragraph if char in vowels)"""
 # List of vowels
 vowels = ['a', 'e', 'i', 'o', 'u']
 
@@ -31,13 +28,13 @@ st.write(f"🔠 Total characters: **{Total_characters}**")
 
 # Check if the word "python" is in the paragraph
 if "python" in user_paragraph:
-  ("✅ Contains 'Python'")
+   st.write("✅ Contains 'Python'")
 else:
-  ("❌ Does not contain 'Python'")
+   st.write("❌ Does not contain 'Python'")
 
 # Search and replace a word
-search_word = input("🔍 Enter a word to search for: ")  # Word to find
-replace_word = input("✍️ Enter a word to replace it with: ")  # Word to replace with
+search_word = st.text_input("🔍 Enter a word to search for: ")  # Word to find
+replace_word = st.text_input("✍️ Enter a word to replace it with: ")  # Word to replace with
 updated_text = user_paragraph.replace(search_word, replace_word)
 
 # Print updated paragraph
