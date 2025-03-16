@@ -1,6 +1,6 @@
 import streamlit as st 
-# Get user input and convert to lowercase
 st.title("✨ Text Analyzer")
+# Get user input and convert to lowercase
 user_paragraph = st.text_area("Enter a paragraph : ").lower()
 if user_paragraph:
 # Print the original paragraph
