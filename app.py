@@ -4,7 +4,7 @@ st.title("✨ Text Analyzer")
 user_paragraph = st.text_area("Enter a paragraph: ").lower()
 
 # Print the original paragraph
-st.markdown("**Your paragraph:**", user_paragraph)
+st.markdown(f"**Your paragraph:**, {user_paragraph}")
 st.subheader("📊 Result")
 # List of vowels
 vowels = ['a', 'e', 'i', 'o', 'u']
